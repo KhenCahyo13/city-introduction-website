@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOTA KEDIRI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/255fd51aa4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <div class="nav-logo">
+                <img src="img/logo/LogoKediri@2x.png" alt="Logo Kediri" width="240">
+            </div>
+            <ul>
+                <li><a href="#beranda" class="item">BERANDA</a></li>
+                <li><a href="#tentang" class="item">TENTANG</a></li>
+                <li><a href="#geografi" class="item">GEOGRAFI</a></li>
+                <li><a href="#demografi" class="item">DEMOGRAFI</a></li>
+                <li><a href="#galeri" class="item">GALERI</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Section Welcome -->
+        <section id="beranda" class="section-welcome">
+            <h1>SELAMAT DATANG</h1>
+            <h3>DI KOTA KEDIRI</h3>
+            <a href="https://earth.google.com/web/search/Simpang+Lima+Gumul+-+KEDIRI,+Tugurejo,+Kabupaten+Kediri,+Jawa+Timur/@-7.8159044,112.0622636,96.28629357a,1045.56144876d,35y,0h,45t,0r/data=Cq8BGoQBEn4KJTB4MmU3ODU3MTc1ZjljZGEzMToweDMxMjM2MTA1NjNlNDRhYjMZZ6ZqcXxDH8AhzG53IPwDXEAqQ1NpbXBhbmcgTGltYSBHdW11bCAtIEtFRElSSSwgVHVndXJlam8sIEthYnVwYXRlbiBLZWRpcmksIEphd2EgVGltdXIYAiABIiYKJAndq7dVo10zQBHdq7dVo10zwBnuVNNqAhIfQCHds6hhkCdXwCgC" target="_blank"><button>LIHAT LOKASI</button></a>
+        </section>
+    </header>
+
+    <button type="button" class="btn btn-lg rounded-circle shadow" id="btn-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <main>
+        <!-- Section Tentang -->
+        <section id="tentang" class="section-tentang">
+            <div class="container">
+                <h1>TENTANG</h1>
+                <hr>
+                <!-- Walikota Kediri -->
+                <div class="walikota">
+                    <div class="row">
+                        <div class="col-lg-3 col-12 walikota-hero">
+                            <img src="img/objek/abu.jpg" alt="Abu Bakar" width="220">
+                            <p>ABDULLAH ABU BAKAR S.E. ( Walikota Kediri )</p>
+                        </div>
+                        <div class="col-lg-9 col-12 biografi">
+                            <h2>BIOGRAFI SINGKAT WALIKOTA KEDIRI</h2>
+                            <p>Abdullah Abu Bakar, S.E. atau lebih dikenal dengan Pak Abu adalah Walikota Kediri kelahiran Kediri, 12 April 1980.
+                                Menjabat sejak tahun 2014 setelah masa jabatan Alm. dr. H. Samsul Ashar, Sp.PD. Pada masa awal jabatannya
+                                adalah menjadi Wakil Walikota Kediri Bersama Samsul Ashar pada tahun 2009-2014, pada Pilkada tahun 2013
+                                Abu Bakar mencalonkan diri sebagai Walikota Kediri Bersama pasangannya Lilik Muhibbah dan berhasil unggul
+                                dan resmi menjadi Walikota Kediri pada tahun 2014-2019, pada tahun 2019 Abu Bakar kembali mangajukan diri
+                                sebagai Walikota Kediri dan kembali unggul dan resmi menjadi Walikota Kediri Periode tahun 2019-2024. Pada
+                                tahun 2021 Wakil Walikota Kediri Lilik Muhibbah meninggal Dunia di RSUD Dr,Soetomo. Sejak saat itu hingga saat
+                                ini jabatan Wakil Walikota masih kosong dan belum terganti dan pemerintahan dikendalikan seorang diri oleh
+                                Walikota Abdullah Abu Bakar.</p>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-dark mx-auto shadow" data-bs-target="#modalBiografi" data-bs-toggle="modal">BACA BIOGRAFI</button>
+                        <!-- Modal Biografi -->
+                        <div class="modal fade" id="modalBiografi" tabindex="1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>Abdullah Abu Bakar, S.E. atau lebih dikenal dengan Pak Abu adalah Walikota Kediri kelahiran Kediri, 12 April 1980.
+                                            Menjabat sejak tahun 2014 setelah masa jabatan Alm. dr. H. Samsul Ashar, Sp.PD. Pada masa awal jabatannya
+                                            adalah menjadi Wakil Walikota Kediri Bersama Samsul Ashar pada tahun 2009-2014, pada Pilkada tahun 2013
+                                            Abu Bakar mencalonkan diri sebagai Walikota Kediri Bersama pasangannya Lilik Muhibbah dan berhasil unggul
+                                            dan resmi menjadi Walikota Kediri pada tahun 2014-2019, pada tahun 2019 Abu Bakar kembali mangajukan diri
+                                            sebagai Walikota Kediri dan kembali unggul dan resmi menjadi Walikota Kediri Periode tahun 2019-2024. Pada
+                                            tahun 2021 Wakil Walikota Kediri Lilik Muhibbah meninggal Dunia di RSUD Dr,Soetomo. Sejak saat itu hingga saat
+                                            ini jabatan Wakil Walikota masih kosong dan belum terganti dan pemerintahan dikendalikan seorang diri oleh
+                                            Walikota Abdullah Abu Bakar.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger btn-sm mx-auto" data-bs-dismiss="modal">TUTUP</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tentang Kota Kediri -->
+                <div class="kota-kediri">
+                    <div class="row">
+                        <div class="col-lg-9 col-12 tentang">
+                            <h2>TENTANG KOTA KEDIRI</h2>
+                            <p>Kediri atau secara Jawa Kadhiri adalah sebuah kota yang berada di provinsi Jawa Timur, Indonesia.
+                                Kota ini terletak 130 km sebelah Barat Daya Kota Surabaya dan merupakan kota terbesar ketiga
+                                provinsi Jawa Timur setelah Kota Surabaya dan Kota Malang menurut jumlah penduduk. Kota Kediri
+                                merupakan kota tertua di Jawa Timur yang memiliki luas 63,40 km. Kota Kediri terbelah oleh Sungai
+                                Brantas yang membujur dari Selatan ke Utara sepanjnng 7 km. Penduduk kota ini berjumlah 287.962
+                                jiwa, berdasarkan data Badan Pusat Statistik untuk Kota Kediri tahun 2022. Di kota ini juga, pabrik
+                                rokok Gudang Garam berkembang dan termasuk pusat perdagangan rokok dan gula terbesar di Indonesia.</p>
+                        </div>
+                        <div class="col-lg-3 col-12 hero-kediri">
+                            <img src="img/objek/slg2.jpg" width="280" alt="Simpang Lima Gumul">
+                            <p>SIMPANG LIMA GUMUL KOTA KEDIRI</p>
+                        </div>
+                        <div class="col-12 mobile-tentang">
+                            <h2>TENTANG KOTA KEDIRI</h2>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-dark btn-sm mx-auto shadow" data-bs-toggle="modal" data-bs-target="#modalTentang">BACA TENTANG</button>
+                        <!-- Modal Tentang -->
+                        <div class="modal fade" data-bs-toggle="modal" id="modalTentang">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>Kediri atau secara Jawa Kadhiri adalah sebuah kota yang berada di provinsi Jawa Timur, Indonesia.
+                                            Kota ini terletak 130 km sebelah Barat Daya Kota Surabaya dan merupakan kota terbesar ketiga
+                                            provinsi Jawa Timur setelah Kota Surabaya dan Kota Malang menurut jumlah penduduk. Kota Kediri
+                                            merupakan kota tertua di Jawa Timur yang memiliki luas 63,40 km. Kota Kediri terbelah oleh Sungai
+                                            Brantas yang membujur dari Selatan ke Utara sepanjnng 7 km. Penduduk kota ini berjumlah 287.962
+                                            jiwa, berdasarkan data Badan Pusat Statistik untuk Kota Kediri tahun 2022. Di kota ini juga, pabrik
+                                            rokok Gudang Garam berkembang dan termasuk pusat perdagangan rokok dan gula terbesar di Indonesia.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger btn-sm mx-auto" data-bs-dismiss="modal">TUTUP</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sejarah Kota Kediri -->
+                <div class="sejarah-kediri">
+                    <div class="row">
+                        <div class="col-lg-3 col-12 hero-sejarah">
+                            <img src="img/objek/kerajaan.jpg" alt="Kerajaan Kediri" width="240">
+                            <p>KERAJAAN KEDIRI</p>
+                        </div>
+                        <div class="col-lg-9 col-12 sejarah">
+                            <h2>SEJARAH SINGKAT KOTA KEDIRI</h2>
+                            <p>Artefak arkeologi yang ditemukan pada tahun 2007 menunjukkan bahwa daerah sekitar Kediri menjadi lokasi 
+                                kerajaan Kediri, sebuah kerajaan Hindu pada abad ke-11. Menurut Serat Calon Arang, awal mula Kediri sebagai 
+                                permukiman perkotaan dimulai ketika Airlangga memindahkan pusat pemerintahan kerajaannya dari Kahuripan 
+                                ke Dahanapura. Dahanapura ("Kota Api") selanjutnya lebih dikenal sebagai Daha.  Sepeninggal Airlangga, wilayah 
+                                Medang dibagi menjadi dua: Panjalu di barat dan Janggala di timur.  Daha menjadi pusat pemerintahan Kerajaan 
+                                Panjalu dan Kahuripan menjadi pusat pemerintahan Kerajaan Jenggala. Panjalu oleh penulis-penulis periode belakangan 
+                                juga disebut sebagai Kerajaan Kadiri/Kediri, dengan wilayah kira-kira Kabupaten Kediri sampai Kabupaten Madiun 
+                                sekarang. Kediri pada masa Revolusi Kemerdekaan 1945-1949 menjadi salah satu titik rute gerilya Panglima Besar 
+                                Jenderal Sudirman.</p>
+                        </div>
+                        <button class="btn btn-sm btn-dark mx-auto shadow" data-bs-toggle="modal" data-bs-target="#modalSejarah">BACA SEJARAH</button>
+                        <!-- Modal Sejarah -->
+                        <div class="modal fade" data-bs-toggle="modal" id="modalSejarah">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>Artefak arkeologi yang ditemukan pada tahun 2007 menunjukkan bahwa daerah sekitar Kediri menjadi lokasi 
+                                            kerajaan Kediri, sebuah kerajaan Hindu pada abad ke-11. Menurut Serat Calon Arang, awal mula Kediri sebagai 
+                                            permukiman perkotaan dimulai ketika Airlangga memindahkan pusat pemerintahan kerajaannya dari Kahuripan 
+                                            ke Dahanapura. Dahanapura ("Kota Api") selanjutnya lebih dikenal sebagai Daha.  Sepeninggal Airlangga, wilayah 
+                                            Medang dibagi menjadi dua: Panjalu di barat dan Janggala di timur.  Daha menjadi pusat pemerintahan Kerajaan 
+                                            Panjalu dan Kahuripan menjadi pusat pemerintahan Kerajaan Jenggala. Panjalu oleh penulis-penulis periode belakangan 
+                                            juga disebut sebagai Kerajaan Kadiri/Kediri, dengan wilayah kira-kira Kabupaten Kediri sampai Kabupaten Madiun 
+                                            sekarang. Kediri pada masa Revolusi Kemerdekaan 1945-1949 menjadi salah satu titik rute gerilya Panglima Besar 
+                                            Jenderal Sudirman.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger btn-sm mx-auto" data-bs-dismiss="modal">TUTUP</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Geografi -->
+        <section id="geografi" class="section-geografi">
+            <div class="container">
+                <h1>GEOGRAFI</h1>
+                <hr>
+                <div class="hero-geografi">
+                    <img src="img/objek/maps.jpg" class="img-fluid d-block mx-auto" width="720" alt="">
+                    <p>PETA WILAYAH NEGARA KESATUAN REPUBLIK INDONESIA</p>
+                </div>
+                <div class="keterangan-geografi">
+                    <p class="text-geografi">
+                        Luas wilayah Kota Kediri adalah 63.40 km² atau (6.340ha) dan merupakan kota sedang di provinsi Jawa Timur. Terletak di daerah yang dilalui Sungai Brantas dan diantara
+                        sebuah lembah di kaki Gunung berapi, Gunung Wilis dengan tinggi 2552 meter. Kota ini berjarak  ±130 km dari Surabaya, ibu kota provinsi Jawa Timur terletak antara 
+                        07°45'-07°55'LS dan 111°05'-112°3' BT. Dari aspek topografi, Kota Kediri terletak pada ketinggian rata-rata 67 meter di atas permukaan laut, dengan tingkat kemiringan
+                        0-40%. Struktur wilayah Kota Kediri terbelah menjadi 2 bagian oleh Sungai Brantas, yaitu sebelah timur dan barat sungai. Wilayah dataran rendah terletak di bagian timur
+                        sungai, meliputi Kecamatan Kediri dan Kecamatan Pesantren, sedangkan dataran tinggi terletak pada bagian barat sungai yaitu Kecamatan Mojoroto yang mana di bagian
+                        barat sungai ini merupakan lahan kurang subur yang sebagian masuk kawasan lereng Gunung Klotok (472m) dan Gunung Maskumambang (300m).
+                    </p>
+                    <button class="btn btn-dark btn-sm mx-auto shadow" data-bs-toggle="modal" data-bs-target="#modalGeografi">BACA GEOGRAFI</button>
+                    <!-- Modal Geografi -->
+                    <div class="modal fade" data-bs-toggle="modal" id="modalGeografi">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p>
+                                        Luas wilayah Kota Kediri adalah 63.40 km² atau (6.340ha) dan merupakan kota sedang di provinsi Jawa Timur. Terletak di daerah yang dilalui Sungai Brantas dan diantara
+                                        sebuah lembah di kaki Gunung berapi, Gunung Wilis dengan tinggi 2552 meter. Kota ini berjarak  ±130 km dari Surabaya, ibu kota provinsi Jawa Timur terletak antara 
+                                        07°45'-07°55'LS dan 111°05'-112°3' BT. Dari aspek topografi, Kota Kediri terletak pada ketinggian rata-rata 67 meter di atas permukaan laut, dengan tingkat kemiringan
+                                        0-40%. Struktur wilayah Kota Kediri terbelah menjadi 2 bagian oleh Sungai Brantas, yaitu sebelah timur dan barat sungai. Wilayah dataran rendah terletak di bagian timur
+                                        sungai, meliputi Kecamatan Kediri dan Kecamatan Pesantren, sedangkan dataran tinggi terletak pada bagian barat sungai yaitu Kecamatan Mojoroto yang mana di bagian
+                                        barat sungai ini merupakan lahan kurang subur yang sebagian masuk kawasan lereng Gunung Klotok (472m) dan Gunung Maskumambang (300m).
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger btn-sm mx-auto" data-bs-dismiss="modal">TUTUP</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row keterangan2">
+                        <div class="col-lg-6 col-12 batas-wilayah">
+                            <h2>BATAS WILAYAH</h2>
+                            <p>Seluruh wilayah Kota Kediri berbatasan dengan Kabupaten Kediri, dengan batas
+                                wilayah sebagai berikut : <br>
+                                
+                                1. Sebelah Utara : Kecamatan Gampengrejo dan Kecamatan Banyakan, Kabupaten
+                                Kediri <br>
+                                2. Sebelah Selatan : Kecamatan Ngasem, Kecamatan Wates, dan Kecamatan Gurah,
+                                Kabupaten Kediri <br>
+                                3.Sebelah Barat : Kecamatan Banyakan dan Kecamatan Semen, Kabupaten Kediri</p>
+                        </div>
+                        <div class="col-lg-6 col-12 iklim">
+                            <h2>IKLIM</h2>
+                            <p>Berdasarkan klasifikasi iklim Koppen, wilayah Kota Kediri beriklim tropis basah 
+                                dan kering (Aw) dengan dua musim, yaitu musim penghujan dan musim kemarau. 
+                                Musim kemarau di kota ini berlangsung sejak awal bulan Mei hingga awal bulan 
+                                November dengan bulan terkering adalah Agustus. Sementara itu, musim hujan di 
+                                wilayah Kediri berlangsung pada pertengahan November hingga akhir April dengan 
+                                bulan terbasah adalah Januari dengan curah hujan bulanan lebih dari 325 mm per 
+                                bulan. Curah hujan tahunan di wilayah Kota Kediri berkisar antara 1.500–2.00 mm 
+                                per tahun dengan jumlah hari hujan berkisar pada 80–130 hari hujan per tahun. Suhu 
+                                udara di kota ini bervariasi antara 19°-32 °C dengan tingkat kelembapan relatif 
+                                berkisar antara 67%–84%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Demografi -->
+        <section id="demografi" class="section-demografi">
+            <div class="container">
+                <h1>DEMOGRAFI</h1>
+                <hr>
+                <div class="demografi row">
+                    <div class="col-lg-4 col-12">
+                        <div class="card card-dark">
+                            <div class="card-body">
+                                <img src="img/icon/citizens1.png" alt="Logo" width="70">
+                                <h1 class="suku">SUKU BANGSA</h1>
+                                <p>Menurut catatan Badan Pusat Statistik Kota Kediri
+                                tahun 2022, jumlah penduduk Kota Kediri pada tahun
+                                2021 sebanyak 297.962 jiwa. Kepadatan penduduk
+                                Kota Kediri adalah sebesar 4.611 jiwa/km²...……..</p>
+                                <button class="btn btn-sm btn-dark shadow" data-bs-toggle="modal" data-bs-target="#modalSuku">BACA SELENGKAPNYA</button>
+                                <!-- Modal Suku Bangsa -->
+                                <div class="modal fade" data-bs-toggle="modal" id="modalSuku">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <p>Menurut catatan Badan Pusat Statistik Kota Kediri tahun 2022, jumlah penduduk Kota Kediri pada tahun 2021 sebanyak 287.962 jiwa.[1] Kepadatan penduduk Kota Kediri adalah sebesar 4.611 jiwa/km². Menjadi situs sebuah ibukota kuno bagi kerajaan Jawa, kota ini merupakan salah satu pusat kebudayaan utama bagi suku Jawa dan di kota ini juga berisi beberapa reruntuhan kuno dan candi era Kerajaan Kediri dan Kerajaan Majapahit. Mayoritas penduduk Kota Kediri adalah suku Jawa, dan beberapa suku lain dari berbagai daerah di Indonesia seperti Tionghoa, Batak, Minahasa, Ambon, Madura, Sunda, Arab, dan berbagai perantau di luar suku Jawa lainnya yang tinggal dan menetap di kota ini.
+
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-sm btn-danger mx-auto" data-bs-dismiss="modal">TUTUP</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card card-dark">
+                            <div class="card-body">
+                                <img src="img/icon/avatar1.png" alt="Logo" width="70">
+                                <h1 class="suku">AGAMA</h1>
+                                <p>Berdasarkan data Badan Pusat Statistik (BPS) Kota Kediri, 
+                                    penduduk Kota Kediri mayoritas beragama Islam yakni 
+                                    sebanyak 91,59%. Kemudian diikuti dengan agama Kristen... 
+                                    </p>
+                                <button class="btn btn-sm btn-dark shadow" data-bs-toggle="modal" data-bs-target="#modalAgama">BACA SELENGKAPNYA</button>
+                                <!-- Modal Agama -->
+                                <div class="modal fade" data-bs-toggle="modal" id="modalAgama">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <p>Berdasarkan data Badan Pusat Statistik (BPS) Kota Kediri, penduduk Kota Kediri mayoritas beragama Islam yakni sebanyak 91,59%. Kemudian diikuti dengan agama Kristen sebanyak 7,93% (Protestan 5,71%, dan Katolik 2,22%), sebagian lagi menganut agama Buddha sebanyak 0,40%, Hindu sebanyak 0,07% dan Konghucu sebanyak 0,01%.[2] Banyaknya tempat ibadah di Kota kediri, terdiri dari 259 masjid, 76 gereja Protestan, 3 gereja Katolik, 3 vihara dan 1 pura.[1] Bangunan Gereja GPIB Kediri merupakan peninggalan masa kolonial Belanda dan Klenteng Tjio Hwie Kiong, sudah berusia ratusan tahun. Toleransi dan kerukunan antar umat beragama di Kediri terjalin dengan baik.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-sm btn-danger mx-auto" data-bs-dismiss="modal">TUTUP</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card card-dark">
+                            <div class="card-body">
+                                <img src="img/icon/language1.png" alt="Logo" width="70">
+                                <h1 class="suku">BAHASA</h1>
+                                <p>Bahasa Indonesia menjadi bahasa formal di masyarakat 
+                                    Kota Kediri, sedangkan Bahasa Jawa menjadi yang paling 
+                                    sering digunakan dalam kehidupan sehari-hari dengan... 
+                                     </p>
+                                <button class="btn btn-sm btn-dark shadow" data-bs-toggle="modal" data-bs-target="#modalBahasa">BACA SELENGKAPNYA</button>
+                                <!-- Modal Bahasa -->
+                                <div class="modal fade" data-bs-toggle="modal" id="modalBahasa">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <p>Bahasa Indonesia menjadi bahasa formal di masyarakat Kota Kediri, sedangkan Bahasa Jawa menjadi yang paling sering digunakan dalam kehidupan sehari-hari dengan keluarga, tetangga, teman, atau orang-orang sesama penutur bahasa Jawa lainnya. Berbeda dengan bahasa Jawa Dialek Surabaya dan Dialek Malang yang memiliki dialek dan gaya bahasa Jawa yang blak-blakan dan egaliter, bahasa Jawa mayoritas masyarakat Kediri dan wilayah Mataraman Jawa Timur lainnya cenderung halus dari segi pemakaian kata dan penuturan.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-danger btn-sm mx-auto" data-bs-dismiss="modal">TUTUP</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Gallery -->
+        <section id="galeri" class="section-galeri">
+            <div class="container">
+                <h1>GALERI</h1>
+                <hr>
+                <div class="galeri row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <img src="img/gallery/dolo.jpg" alt="Air Terjun Dolo" class="w-100 mb-4">
+                        <img src="img/gallery/gg.jpg" alt="Gudang Garam" class="w-100 mb-4">
+                        <img src="img/gallery/gor.jpg" alt="Gor Jayabaya" class="w-100 mb-4">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <img src="img/gallery/gumul.jfif" alt="Simpang Lima Gumul" class="w-100 mb-4">
+                        <img src="img/gallery/gumul_paradise.jfif" alt="Gumul Paradise" class="w-100 mb-4">
+                        <img src="img/gallery/kampung_inggris.jfif" alt="Kampung Inggris" class="w-100 mb-4">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <img src="img/gallery/kediri_water_park.jpg" alt="Kediri Water Park" class="w-100 mb-4">
+                        <img src="img/gallery/kelud.jfif" alt="Gunung Kelud" class="w-100 mb-4">
+                        <img src="img/gallery/kelud2.jfif" alt="Gunung Kelud" class="w-100 mb-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="section-footer">
+            <div class="container">
+                <div class="icons">
+                    <a href="#"><img src="img/icon/fb.png" width="42" alt="Facebook"></a>
+                    <a href="#"><img src="img/icon/github.png" width="42" alt="Github"></a>
+                    <a href="#"><img src="img/icon/ig.png" width="42" alt="Instagram"></a>
+                </div>
+                <hr>
+                <div class="text-footer">
+                    <p>Copyright KhenCahyo 2022   |   Bootstrap 5 - SCSS - Kota Kediri</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+</body>
+</html>

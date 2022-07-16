@@ -1,0 +1,742 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #1E1E1E;
+}
+
+header {
+    width: 100%;
+    height: 440px;
+    background-image: url(../img/objek/Objek@2x.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#btn-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #00C39A;
+    display: none;
+    z-index: 99;
+    border: none;
+}
+
+#btn-to-top i {
+    color: whitesmoke;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.bg-custom {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border-bottom: 1px solid black;
+    backdrop-filter: blur(5px);
+}
+
+nav .nav-logo {
+    margin-left: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    left: 58%;
+    position: fixed;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(80, 80, 80, 0.4);
+    border-radius: 4px;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    width: 45px;
+    height: 28px;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    left: -8px;
+    opacity: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin-bottom: 6px;
+    margin-right: 35px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child{
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-2px, -0.5px);
+}
+
+.menu-toggle input:checked ~ span:last-child{
+    background-color: white;
+    transform: rotate(-45deg) translate(-0.5px, -2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+/* Section Welcome */
+.section-welcome {
+    width: 50%;
+    height: 100%;
+}
+
+.section-welcome h1 {
+    color: whitesmoke;
+    position: relative;
+    top: 26%;
+    font-size: 66px;
+    margin-left: 80px;
+}
+
+.section-welcome h3 {
+    color: whitesmoke;
+    position: relative;
+    top: 24%;
+    font-size: 46px;
+    margin-left: 80px;
+}
+
+.section-welcome button {
+    padding: 8px 14px;
+    color: whitesmoke;
+    background-color: #121418;
+    margin-left: 80px;
+    position: relative;
+    top: 25%;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+.section-welcome button:hover{
+    background-color: #1E1E1E;
+}
+
+// Section Tentang - Walikota
+.section-tentang {
+    width: 100%;
+    height: fit-content;
+}
+
+.section-tentang h1 {
+    font-size: 52px;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 46px;
+}
+
+.section-tentang hr {
+    color: whitesmoke;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-tentang .walikota {
+    margin-top: 90px;
+}
+
+.section-tentang .walikota .walikota-hero img {
+    border: 2px solid whitesmoke;
+    border-radius: 14px;
+}
+
+.section-tentang .walikota .walikota-hero p {
+    color: whitesmoke;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.section-tentang .walikota .biografi h2 {
+    color: whitesmoke;
+}
+
+.section-tentang .walikota .biografi p {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.section-tentang button {
+    display: none;
+}
+
+// Section Tentang - Kota Kediri
+.section-tentang .kota-kediri {
+    margin-top: 82px;
+}
+
+.section-tentang .kota-kediri .tentang h2 {
+    color: whitesmoke;
+}
+
+.section-tentang .kota-kediri .tentang p {
+    color: whitesmoke;
+}
+
+.section-tentang .kota-kediri .hero-kediri img {
+    border: 2px solid whitesmoke;
+    border-radius: 14px;
+}
+
+.section-tentang .kota-kediri .hero-kediri p {
+    font-size: 13px;
+    margin-top: 6px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.section-tentang .kota-kediri .mobile-tentang {
+    display: none;
+}
+
+// Section Tentang - Sejarah 
+.section-tentang .sejarah-kediri {
+    margin-top: 82px;
+}
+
+.section-tentang .sejarah-kediri .hero-sejarah img {
+    border: 2px solid whitesmoke;
+    border-radius: 14px;
+}
+
+.section-tentang .sejarah-kediri .hero-sejarah p {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.section-tentang .sejarah-kediri .sejarah h2 {
+    color: whitesmoke;
+}
+
+.section-tentang .sejarah-kediri .sejarah p {
+    color: whitesmoke;
+}
+
+// Section Geografi
+.section-geografi {
+    background-color: #121418;
+    width: 100%;
+    height: fit-content;
+    margin-top: 112px;
+    margin-right: -120px;
+    padding-bottom: 112px;
+}
+
+.section-geografi h1 {
+    color: whitesmoke;
+    font-size: 52px;
+    text-align: center;
+    padding-top: 46px;
+}
+
+.section-geografi hr {
+    color: whitesmoke;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-geografi .hero-geografi {
+    margin-top: 80px;
+}
+
+.section-geografi .hero-geografi img {
+    border: 2px solid whitesmoke;
+    border-radius: 14px;
+}
+
+.section-geografi .hero-geografi p {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.section-geografi .keterangan-geografi .text-geografi {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.section-geografi .keterangan-geografi .keterangan2 {
+    color: whitesmoke;
+    margin-top: 92px;
+}
+
+.section-geografi .keterangan-geografi button {
+    display: none;
+}
+
+// Section Demografi
+.section-demografi {
+    width: 100%;
+    height: fit-content;
+    margin-top: 56px;
+    margin-bottom: 92px;
+}
+
+.section-demografi h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 52px;
+}
+
+.section-demografi hr {
+    color: whitesmoke;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-demografi .demografi {
+    margin-top: 112px;
+}
+
+.section-demografi .demografi .card-dark {
+    background-color: #121418;
+    color: whitesmoke;
+    border-radius: 16px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+    height: 20rem;
+}
+
+.section-demografi .demografi .card-dark .suku {
+    font-size: 32px;
+    text-align: left;
+}
+
+.section-demografi .modal .modal-content {
+    background-color: #121418;
+}
+
+// Section Galeri
+.section-galeri {
+    width: 100%;
+    height: fit-content;
+    background-color: #121418;
+    padding-bottom: 76px;
+}
+
+.section-galeri h1 {
+    font-size: 52px;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 46px;
+}
+
+.section-galeri hr {
+    color: whitesmoke;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-galeri .container .galeri {
+    margin-top: 92px;
+}
+.section-galeri .container .galeri img {
+    border: 2px solid whitesmoke;
+    border-radius: 14px;
+}
+
+// Section Footer
+
+.section-footer {
+    margin-top: 72px;
+}
+
+.section-footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.section-footer .icons a img {
+    margin-left: 18px;
+}
+
+.section-footer hr {
+    color: whitesmoke;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-footer .text-footer p {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1200px) {
+    nav .nav-logo {
+        margin-left: 35px;
+    }
+
+    nav ul {
+        left: 50%;
+    }
+
+    .section-welcome {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 992px){
+    nav .nav-logo {
+        margin-left: 30px;
+    }
+
+    nav ul {
+        left: 43%;
+    }
+
+    .section-welcome {
+        width: 100%;
+    }
+
+    .section-tentang .walikota .walikota-hero {
+        text-align: center;
+    }
+
+    .section-tentang .walikota .biografi {
+        text-align: center;
+    }
+
+    .section-tentang .kota-kediri .tentang {
+        text-align: center;
+    }
+
+    .section-tentang .kota-kediri .hero-kediri {
+        text-align: center;
+    }
+
+    .section-tentang .sejarah-kediri {
+        text-align: center;
+    }
+
+    .section-demografi .demografi {
+        margin-top: 52px;
+    }
+
+    .section-demografi .demografi .card-dark {
+        margin-bottom: 22px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav .nav-logo {
+        margin-top: 6px;
+    }
+
+    nav .nav-logo img {
+        width: 32%;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        background-color: #121418;
+        transform: translateY(-100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .section-welcome {
+        width: 100%;
+    }
+
+    .section-demografi .demografi {
+        margin-top: 52px;
+    }
+
+    .section-demografi .demografi .card-dark {
+        margin-bottom: 22px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    nav .nav-logo img {
+        width: 42%;
+    }
+
+    .section-welcome {
+        width: 100%;
+        position: relative;
+        top: 5%;
+    }
+
+    .section-welcome h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 48px;
+        align-items: center;
+    }
+
+    .section-welcome h3 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 38px;
+    }
+
+    .section-welcome button {
+        margin-left: 0;
+        left: 40%;
+    }
+
+    .section-tentang h1 {
+        font-size: 42px;
+    }
+
+    .section-geografi h1 {
+        font-size: 42px;
+    }
+
+    .section-demografi h1 {
+        font-size: 42px;
+    }
+
+    .section-demografi .demografi {
+        margin-top: 52px;
+    }
+
+    .section-demografi .demografi .card-dark {
+        margin-bottom: 22px;
+    }
+}
+
+@media screen and (max-width: 398px){
+    nav .nav-logo {
+        margin-left: 8px;
+    }
+
+    nav .nav-logo img {
+        width: 60%;
+    }
+
+    .section-welcome {
+        width: 100%;
+        position: relative;
+        top: 10%;
+    }
+
+    .section-welcome h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 38px;
+        align-items: center;
+    }
+
+    .section-welcome h3 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .section-welcome button {
+        margin-left: 0;
+        left: 36%;
+    }
+
+    .section-tentang h1 {
+        font-size: 34px;
+    }
+
+    .section-tentang .walikota {
+        margin-top: 52px;
+    }
+
+    .section-tentang .walikota .biografi p {
+        display: none;
+    }
+
+    .section-tentang button {
+        display: block;
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .section-tentang .modal {
+        margin-top: 5rem;
+    }
+
+    .section-tentang .modal .modal-content {
+        background-color: #121418;
+    }
+
+    .section-tentang .modal .modal-body {
+        color: whitesmoke;
+    }
+
+    .section-tentang .kota-kediri {
+        margin-top: 36px;
+    }
+
+    .section-tentang .kota-kediri .tentang  {
+        display: none;
+    }
+
+    .section-tentang .kota-kediri .mobile-tentang {
+        display: block;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .section-tentang .sejarah-kediri {
+        margin-top: 36px;
+    }
+
+    .section-tentang .sejarah-kediri .hero-sejarah {
+        text-align: center;
+    }
+
+    .section-tentang .sejarah-kediri .sejarah {
+        text-align: center;
+    }
+
+    .section-tentang .sejarah-kediri .sejarah p {
+        display: none;
+    }
+
+    .section-geografi {
+        margin-top: 92px;
+        padding-bottom: 32px;
+    }
+
+    .section-geografi h1 {
+        font-size: 34px;
+    }
+
+    .section-geografi .hero-geografi {
+        margin-top: 42px;
+    }
+
+    .section-geografi .keterangan-geografi .keterangan2 {
+        margin-top: 52px;
+    }
+    
+    .section-geografi .keterangan-geografi .text-geografi {
+        display: none;
+    }
+
+    .section-geografi .keterangan-geografi button {
+        display: block;
+    }
+
+    .section-geografi .modal {
+        margin-top: 5rem;
+    }
+
+    .section-geografi .modal .modal-content {
+        background-color: #121418;
+    }
+
+    .section-geografi .modal .modal-body {
+        color: whitesmoke;
+    }
+
+    .section-demografi {
+        margin-bottom: 62px;
+    }
+    
+    .section-demografi h1 {
+        font-size: 34px;
+    }
+
+    .section-demografi .demografi {
+        margin-top: 52px;
+    }
+
+    .section-demografi .demografi .card-dark {
+        margin-bottom: 22px;
+    }
+
+    .section-galeri {
+        padding-bottom: 32px;
+    }
+
+    .section-galeri h1 {
+        font-size: 34px;
+    }
+
+    .section-galeri .container .galeri {
+        margin-top: 62px;
+    }
+
+    .section-footer .text-footer p {
+        letter-spacing: 0;
+        font-size: 14px;
+    }
+}
